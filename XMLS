@@ -1,0 +1,235 @@
+TYPES.XML
+======================================================= 
+ <!-- MRAP -->
+  <type name="MRAP_Cougar">
+    <nominal>29</nominal>
+    <lifetime>3888000</lifetime>
+    <restock>0</restock>
+    <min>7</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+  </type>
+  <type name="mrap_wheel">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_driver">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_codriver">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_trunk0">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_trunk">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+  <type name="mrap_doors_hood">
+    <nominal>22</nominal>
+    <lifetime>2700</lifetime>
+    <restock>0</restock>
+    <min>10</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0"  crafted="0" deloot="0" />
+    <category name="vehiclesparts" />
+    <tag name="floor" />
+    <usage name="Industrial" />
+  </type>
+   
+PROFILES/TRADERS
+======================================================= 
+ <!-- MRAP -->  
+    <Category> Vehicles
+		MRAP_Cougar,      				    V,      700000,  30000
+
+	<Category> Vehicle Parts
+        mrap_wheel,             		*,      225,   100
+        mrap_doors_driver,       		*,      225,   100
+        mrap_doors_codriver,       		*,      225,   100
+        mrap_doors_trunk0,          	*,      225,   100
+        mrap_doors_trunk,         		*,      225,   100
+	mrap_doors_hood,             	*,      225,   100
+
+PROFILES/TRADERS/VEHILCE PARTS
+======================================================= 
+<VehicleParts>	MRAP_Cougar
+		SparkPlug
+		CarBattery
+		CarRadiator
+		HeadlightH7
+		HeadlightH7
+		CanisterGasoline
+                mrap_wheel
+		mrap_wheel
+		mrap_wheel
+		mrap_wheel
+		mrap_wheel
+                mrap_doors_driver
+                mrap_doors_codriver
+                mrap_doors_trunk0
+                mrap_doors_trunk
+		mrap_doors_hood
+
+CFGSPAWNABLETYPES.XML
+======================================================= 
+ <!-- MRAP -->  
+	<type name="MRAP_Cougar">
+       <attachments chance="1.00">
+            <item name="SparkPlug" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments> 
+        <attachments chance="1.00">
+            <item name="mrap_wheel" chance="0.50" />
+        </attachments>     
+        <attachments chance="1.00">
+            <item name="CarRadiator" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="CarBattery" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="HeadlightH7" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="HeadlightH7" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_driver" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_codriver" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_trunk0" chance="0.50" />
+        </attachments>         
+        <attachments chance="1.00">
+            <item name="mrap_doors_trunk" chance="0.50" />
+        </attachments>
+        <attachments chance="1.00">
+            <item name="mrap_doors_hood" chance="0.50" />
+        </attachments>
+    </type>
+
+CFGEVENTSPAWNS.XML
+======================================================= 
+    <event name="VehicleMRAP_Cougar" >
+		<pos x="7735.35498" z="14834.541016" a="275.906708" />
+		<pos x="2276.999268" z="15255.469727" a="55.468719" />
+		<pos x="1522.324341" z="14049.371094" a="119.360489" />
+		<pos x="3251.31543" z="13731.794922" a="322.267578" />
+		<pos x="5770.530762" z="15185.775391" a="270.976105" />
+		<pos x="4406.640625" z="13568.414062" a="153.805893" />
+		<pos x="7041.077148" z="14531.375977" a="339.113647" />
+		<pos x="3575.642578" z="6990.220703" a="0" />
+		<pos x="3115.170654" z="9212.78418" a="216.740021" />
+		<pos x="3789.952637" z="13001.110352" a="70.260406" />
+		<pos x="4045.417725" z="11620.316406" a="204.550583" />
+		<pos x="4131.821289" z="13122.179687" a="193.593796" />
+		<pos x="5960.123535" z="10146.770508" a="209.48114" />
+		<pos x="2906.678223" z="9736.077148" a="320.966431" />
+		<pos x="1798.839722" z="9127.887695" a="37.321552" />
+		<pos x="3012.489502" z="6762.072754" a="122.374695" />
+		<pos x="3040.473633" z="12342.300781" a="257.143219" />
+		<pos x="289.986878" z="6591.820801" a="109.054245" />
+		<pos x="2041.32251" z="12167.145508" a="153.463516" />
+		<pos x="1045.962647" z="9971.117188" a="128.536819" />
+		<pos x="1577.859375" z="10434.791992" a="80.463913" />
+		<pos x="2009.389771" z="10077.943359" a="87.722778" />
+		<pos x="4986.840332" z="12949.183594" a="272.756622" />
+		<pos x="2253.827881" z="10861.227539" a="0" />
+		<pos x="4957.879395" z="13034.267578" a="91.284721" />
+		<pos x="7702.665039" z="12682.482422" a="0" />
+		<pos x="8857.023437" z="11649.842774" a="13.832942" />
+		<pos x="8667.68457" z="13278.957031" a="307.270477" />
+		<pos x="5081.93457" z="12738.611328" a="218.451981" />
+		<pos x="4812.191895" z="10559.25293" a="46.977211" />
+		<pos x="5276.042481" z="10581.310547" a="147.848145" />
+		<pos x="981.095154" z="7679.972168" a="80.600868" />
+		<pos x="5227.710938" z="11521.333984" a="136.686966" />
+	</event>
+	
+EVENTS.XML
+======================================================= 
+ <!-- MRAP --> 	
+	<event name="MRAP_Cougar">
+        <nominal>10</nominal>
+        <min>7</min>
+        <max>13</max>
+        <lifetime>300</lifetime>
+        <restock>0</restock>
+        <saferadius>500</saferadius>
+        <distanceradius>500</distanceradius>
+        <cleanupradius>200</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="5" min="3" type="MRAP_4x4"/>
+        </children>
+    </event>	
